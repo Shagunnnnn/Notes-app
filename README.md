@@ -15,23 +15,55 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# 📝 Notes App (iOS-style)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+A full-stack Notes application inspired by the iOS Notes app UI.  
+Users can create, view, edit, and delete notes with date & time support.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🚀 Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Frontend:** Next.js (App Router)
+- **Backend:** Next.js API Routes
+- **Database:** MongoDB (Mongoose)
+- **Styling:** Tailwind CSS
+- **Language:** JavaScript
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ✨ Features
 
-## Deploy on Vercel
+- ➕ Add new notes  
+- 📝 Edit existing notes  
+- ❌ Delete notes instantly  
+- 📅 Automatic date & time display  
+- 📱 Fully responsive (mobile + web friendly UI)  
+- 💾 Data stored securely in MongoDB  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# Notes-app
+## 📂 Project Structure
+
+notes-app/
+│
+├── app/
+│ ├── api/
+│ │ └── notes/
+│ │ ├── route.js
+│ │ └── [id]/route.js
+│ ├── page.js
+│
+├── components/
+│ ├── NoteForm.jsx
+│ └── NoteList.jsx
+│
+├── lib/
+│ └── mongodb.js
+│
+├── models/
+│ └── Note.js
+│
+├── .env.local
+├── .gitignore
+└── README.md
