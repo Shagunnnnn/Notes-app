@@ -17,7 +17,7 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 # 📝 Notes App
 
-A full-stack Notes application inspired by the Notes app UI.  
+A full-stack Notes application.  
 Users can create, view, edit, and delete notes with date & time support.
 
 ---
